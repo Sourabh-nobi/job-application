@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+body{
+    background: #ccc;
+    background-image: url(/img/developer.jpg);
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+    
+}
+
+.box{
+    border: 2px solid white;
+    max-width: 600px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 150px auto;
+    box-shadow: 4px 5px 10px rgb(1, 1, 1, 0.1) ;
+    border-radius: 5px;
+    backdrop-filter: blur(60px);
+}
+h1{
+    margin-bottom: 20px;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input, select, textarea{
+    padding: 6px 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 15px;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+#file_upload{
+    background: white;
+}
+
+input::file-selector-button{
+    border: none;
+
+}
+.button{
+    text-align: end;
+    margin-top: 20px;
+
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in ;
+    border: 2px solid white;
+}
+
+button:hover{
+    background: rgb(0, 0, 0);
+    transition: 0.3s ease-out ;
+}
+
+.text_area{
+    grid-column: 1 / span 2;
+}
+
+.text_area textarea{
+    width: 97%;
+}
+
+@media (max-width: 463px){
+    .text_area{
+        grid-column: 1 / span 1;
+    }
+    .text_area textarea{
+        width: 94%;
+    }
+    
+}
